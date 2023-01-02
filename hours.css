@@ -1,0 +1,131 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body{
+    font-size: 16px;
+}
+
+
+
+table{
+    text-align: center;
+    width: 500px;
+    height: 250px;
+    position: absolute;
+    top: 40%;
+    margin-left: 37%;
+}
+
+table tr th td{
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    
+}
+
+.hero{
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0,0,0,0.75), rgba(0,0,0,0.75)),url(background.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.nav{
+    width: 85%;
+    margin: auto;
+    padding: 20px 8%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+nav{
+    display: flex;
+    align-items: center;
+    padding: 20px 8%;
+}
+
+nav ul{
+    flex: 1;
+    text-align: right;
+}
+
+.logo{
+    width: 200px;
+    position: fixed;
+    margin-top: 75px;
+    left: 75px;
+}
+
+.navbar ul li{
+    list-style: none;
+    display: inline-block;
+    margin: 0 20px;
+    position: relative;
+}
+
+.navbar ul li a{
+    text-decoration: none;
+    color: #fff;
+    text-transform: uppercase;
+}
+
+.navbar ul li::after{
+    content: '';
+    height: 3px;
+    width: 0%;
+    background: #e97517;
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    transition: 0.5s;
+}
+
+.navbar ul li:hover::after{
+    width: 100%;
+}
+
+.button{
+    width: 200px;
+    padding: 15px 0;
+    text-align: center;
+    margin: 20px 10px;
+    border-radius: 25px;
+    font-weight: bold;
+    border: 2px solid #e97517;
+    background: transparent;
+    color: #fff;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+}
+
+span{
+    background: #e97517;
+    height: 50px;
+    width: 0;
+    border-radius: 25%;
+    position: absolute;
+    left: 0;
+    right: 0;
+    z-index: -1;
+}
+
+button:hover span{
+    width: 100%;
+}
+
+button:hover{
+    background: #e97517;
+}
+
+.hours{
+    font-size: 40px;
+    font-family: 'Courier New', Courier, monospace;
+    color: #e97517;
+}
